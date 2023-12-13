@@ -1,0 +1,14 @@
+.header {
+  border: solid;
+  background-color: lightgray;
+}
+.headup {
+  background-color: lightcoral;
+}
+.headbot {
+  background-color: lightgreen;
+}
+.sidebar {
+  border: solid;
+  background-color: lightblue;
+}
