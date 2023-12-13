@@ -1,14 +1,39 @@
+/* ______________________________HEADER____________________________ */
 .header {
-  border: solid;
-  background-color: lightgray;
-}
-.headup {
   background-color: lightcoral;
 }
-.headbot {
-  background-color: lightgreen;
-}
-.sidebar {
+.headup {
   border: solid;
+}
+.headbot {
+  border: solid;
+}
+
+/*_______________________________ sidebar___________________________________ */
+.sidebar {
+  border: solid red;
   background-color: lightblue;
+}
+
+/*_________________________ dashboard_____________________________ */
+.dashboard {
+  border: solid;
+  background-color: antiquewhite;
+}
+.left {
+  border: solid rgb(82, 177, 255);
+}
+.cards {
+  border: rgb(0, 0, 0) solid;
+}
+
+.right {
+  border: blue solid;
+}
+
+.right_card {
+  border: solid;
+}
+.bot_right {
+  border: solid;
 }
