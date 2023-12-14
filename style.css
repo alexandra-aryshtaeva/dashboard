@@ -1,39 +1,85 @@
+body {
+  height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar dashboard";
+  height: 100%;
+  grid-template-rows: 200px auto;
+}
+
 /* ______________________________HEADER____________________________ */
 .header {
-  background-color: lightcoral;
+  display: grid;
+  grid-template-columns: auto calc(100% / 3);
+  padding: 0px;
+  margin: 0px;
+  grid-area: header;
+  display: grid;
+  background-color: rgb(148, 128, 240);
 }
 .headup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-self: center;
   border: solid;
 }
 .headbot {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-self: center;
   border: solid;
 }
 
 /*_______________________________ sidebar___________________________________ */
 .sidebar {
-  border: solid red;
-  background-color: lightblue;
+  grid-area: sidebar;
+  width: 280px;
+  display: grid;
+  grid-area: 1/1/3/1;
+  border: solid rgb(98, 0, 255);
+  background-color: rgb(81, 181, 228);
 }
 
 /*_________________________ dashboard_____________________________ */
 .dashboard {
+  padding-top: 16px;
+  grid-area: dashboard;
+  display: inline-grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr) calc(100% / 4);
+
+  padding-left: 16px;
   border: solid;
-  background-color: antiquewhite;
+  background-color: rgb(206, 206, 206);
 }
-.left {
-  border: solid rgb(82, 177, 255);
+
+.projects {
+  border: solid;
+  align-items: ;
+  grid-column: 1/ 3;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 24px 100%;
 }
+
 .cards {
-  border: rgb(0, 0, 0) solid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: solid salmon;
+  background-color: aliceblue;
+  gap: 16px;
+}
+.trending {
+  border: solid;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  align-items: center;
 }
 
-.right {
+.announcements {
   border: blue solid;
-}
-
-.right_card {
-  border: solid;
-}
-.bot_right {
-  border: solid;
 }

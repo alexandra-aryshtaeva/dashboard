@@ -137,3 +137,11 @@ button {
   width: auto;
   overflow: visible;
 }
+
+h1 {
+  font-weight: bolder;
+}
+
+h2 {
+  font-weight: bolder;
+}
