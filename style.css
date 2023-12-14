@@ -1,3 +1,6 @@
+* {
+  --blue: rgb(11, 151, 233);
+}
 body {
   height: 100vh;
 }
@@ -14,34 +17,71 @@ body {
 .header {
   display: grid;
   grid-template-columns: auto calc(100% / 3);
-  padding: 0px;
-  margin: 0px;
   grid-area: header;
-  display: grid;
-  background-color: rgb(148, 128, 240);
+  background-color: white;
+  padding-left: 32px;
 }
-.headup {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.searchbar {
+  display: flex;
   align-self: center;
+  width: 500px;
   border: solid;
 }
-.headbot {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+.settings {
   align-self: center;
-  border: solid;
+  justify-self: end;
+  align-self: center;
+  margin-right: 32px;
 }
+.greeting {
+  display: grid;
 
+  align-self: center;
+}
+.menu {
+  display: flex;
+  gap: 16px;
+
+  align-items: center;
+  align-self: center;
+  justify-self: end;
+
+  margin-right: 32px;
+}
+.menu > button {
+  padding: 8px 16px 8px 16px;
+
+  border-radius: 16px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--blue);
+}
 /*_______________________________ sidebar___________________________________ */
 .sidebar {
+  color: white;
+  padding-left: 16px;
+  height: 100vh;
+  display: grid;
+  gap: 24px;
+  grid-template-rows: 100px 100px 100px;
   grid-area: sidebar;
   width: 280px;
   display: grid;
-  grid-area: 1/1/3/1;
-  border: solid rgb(98, 0, 255);
-  background-color: rgb(81, 181, 228);
+  background-color: var(--blue);
+}
+
+.title {
+  padding-left: 16px;
+  display: flex;
+  align-self: center;
+  font-size: 32px;
+}
+.group1 {
+  padding-left: 16px;
+}
+.group2 {
+  padding-left: 16px;
 }
 
 /*_________________________ dashboard_____________________________ */
@@ -53,12 +93,11 @@ body {
   grid-template-columns: repeat(2, 1fr) calc(100% / 4);
 
   padding-left: 16px;
-  border: solid;
-  background-color: rgb(206, 206, 206);
+
+  background-color: rgb(226, 226, 236);
 }
 
 .projects {
-  border: solid;
   align-items: ;
   grid-column: 1/ 3;
   grid-row: 1 / 3;
@@ -69,17 +108,45 @@ body {
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border: solid salmon;
-  background-color: aliceblue;
+
   gap: 16px;
 }
-.trending {
-  border: solid;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  align-items: center;
+.card {
+  padding-left: 16px;
+  padding-top: 16px;
+  background-color: white;
+  border-radius: 8px;
+  border-left: 8px rgb(255, 208, 79) solid;
+}
+.announcements {
+  display: grid;
+  grid-template-rows: 1fr 90%;
+  gap: 5px;
+}
+.announcement_card {
+  display: grid;
+  padding-top: 16px;
+  padding-left: 16px;
+  grid-template-rows: repeat(3, 1fr);
+
+  gap: 16px;
+  border-radius: 8px;
+  background-color: white;
 }
 
-.announcements {
-  border: blue solid;
+.trending {
+  display: grid;
+  grid-template-rows: 1fr 90%;
+  gap: 5px;
+}
+
+.trending_card {
+  display: grid;
+  padding-top: 16px;
+  padding-left: 16px;
+  grid-template-rows: repeat(3, 1fr);
+
+  gap: 16px;
+  border-radius: 8px;
+  background-color: white;
 }
